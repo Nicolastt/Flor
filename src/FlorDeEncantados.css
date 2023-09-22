@@ -1,0 +1,166 @@
+.flor-de-encantados.brilla .petalo{
+    animation: brillo 3s infinite;
+}
+
+.flor-de-encantados {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: none;
+}
+
+.tallo {
+    width: 20px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: #228b22;
+    border: 1px solid rgb(50, 96, 0);
+    box-shadow: 0 0 30px rgb(37, 126, 9);
+}
+
+.hoja {
+    background-color: #228b22;
+    width: 50px;
+    height: 20px;
+    border-radius: 500px 0 500px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.hoja.izquierda {
+    top: 100%;
+    left: 20%;
+    transform: rotate(45deg);
+    box-shadow: 0 0 15px rgb(94, 239, 87);
+}
+
+.hoja.derecha {
+    top: 90%;
+    right: 20%;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 15px rgb(85, 255, 0);
+}
+
+.petalo {
+    width: 100px;
+    height: 50px;
+    border-radius: 500px 0 500px 0;
+    position: absolute;
+    transform: rotate(-15deg) translate(-50%, -50%);
+    transform-origin: center;
+    z-index: 1;
+
+    box-shadow: 0 0 10px rgb(255, 240, 0);
+    border: 1px solid #949494;
+    background: linear-gradient(to bottom, yellow, orange);
+
+    /* Haz que los pétalos sigan desplegados cuando el brillo se active */
+    animation-fill-mode: forwards;
+    --petalo-index: 1;
+
+    /* Centrar el pétalo en la pantalla */
+    top: 35%;
+    left: 25%;
+}
+
+.petalo.uno {
+    transform: rotate(90deg) translate(80px, 0);
+    --petalo-index: 8;
+}
+
+.petalo.dos {
+    transform: rotate(45deg) translate(80px, 0);
+    --petalo-index: 7;
+}
+
+.petalo.tres {
+    transform: rotate(0deg) translate(80px, 0);
+    --petalo-index: 6;
+}
+
+.petalo.cuatro {
+    transform: rotate(315deg) translate(80px, 0);
+    --petalo-index: 5;
+}
+
+.petalo.cinco {
+    transform: rotate(270deg) translate(80px, 0);
+    --petalo-index: 4;
+}
+
+.petalo.seis {
+    transform: rotate(225deg) translate(80px, 0);
+    --petalo-index: 3;
+}
+
+.petalo.siete {
+    transform: rotate(180deg) translate(80px, 0);
+    --petalo-index: 2;
+}
+
+.petalo.ocho {
+    transform: rotate(135deg) translate(80px, 0);
+    --petalo-index: 1;
+}
+
+
+.centro-flor {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border: 1px solid rgba(180, 164, 164, 0.55);
+    background: linear-gradient(to bottom, #673c0f, #2a1a00);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+
+@keyframes brillo {
+    0% {
+        box-shadow: 0 0 10px rgb(255, 240, 0);
+    }
+    12% {
+        box-shadow: 0 0 15px rgb(255, 220, 0);
+    }
+    25% {
+        box-shadow: 0 0 20px rgb(255, 200, 0);
+    }
+    37% {
+        box-shadow: 0 0 25px rgb(255, 180, 0);
+    }
+    50% {
+        box-shadow: 0 0 30px rgb(255, 160, 0);
+    }
+    62% {
+        box-shadow: 0 0 25px rgb(255, 180, 0);
+    }
+    75% {
+        box-shadow: 0 0 20px rgb(255, 200, 0);
+    }
+    87% {
+        box-shadow: 0 0 15px rgb(255, 220, 0);
+    }
+    100% {
+        box-shadow: 0 0 10px rgb(255, 240, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
