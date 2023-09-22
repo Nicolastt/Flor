@@ -14,11 +14,17 @@ body{
 button {
   font-size: 1em;
   padding: 10px 20px;
-  background-color: #ffcc00;
+  background-color: #d9ab00;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 20px;
+  box-shadow: 0 10px 20px #d9ab00;
+
+}
+
+button:hover{
+  background-color: #ffc700;
 }
 
 button:disabled {
