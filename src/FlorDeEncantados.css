@@ -1,4 +1,8 @@
 .flor-de-encantados.brilla .petalo{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    display: inline;
     animation: brillo 3s infinite;
 }
 
@@ -53,17 +57,11 @@
     height: 50px;
     border-radius: 500px 0 500px 0;
     position: absolute;
-    transform: rotate(-15deg) translate(-50%, -50%);
-    transform-origin: center;
     z-index: 1;
 
     box-shadow: 0 0 10px rgb(255, 240, 0);
     border: 1px solid #949494;
     background: linear-gradient(to bottom, yellow, orange);
-
-    /* Haz que los pétalos sigan desplegados cuando el brillo se active */
-    animation-fill-mode: forwards;
-    --petalo-index: 1;
 
     /* Centrar el pétalo en la pantalla */
     top: 35%;
@@ -72,42 +70,34 @@
 
 .petalo.uno {
     transform: rotate(90deg) translate(80px, 0);
-    --petalo-index: 8;
 }
 
 .petalo.dos {
     transform: rotate(45deg) translate(80px, 0);
-    --petalo-index: 7;
 }
 
 .petalo.tres {
     transform: rotate(0deg) translate(80px, 0);
-    --petalo-index: 6;
 }
 
 .petalo.cuatro {
     transform: rotate(315deg) translate(80px, 0);
-    --petalo-index: 5;
 }
 
 .petalo.cinco {
     transform: rotate(270deg) translate(80px, 0);
-    --petalo-index: 4;
 }
 
 .petalo.seis {
     transform: rotate(225deg) translate(80px, 0);
-    --petalo-index: 3;
 }
 
 .petalo.siete {
     transform: rotate(180deg) translate(80px, 0);
-    --petalo-index: 2;
 }
 
 .petalo.ocho {
     transform: rotate(135deg) translate(80px, 0);
-    --petalo-index: 1;
 }
 
 
@@ -155,12 +145,3 @@
         box-shadow: 0 0 10px rgb(255, 240, 0);
     }
 }
-
-
-
-
-
-
-
-
-

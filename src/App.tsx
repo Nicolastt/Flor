@@ -4,7 +4,7 @@ import './FlorDeEncantados.css';
 
 const FlorDeEncantados: React.FC<{ brilla: boolean }> = ({brilla}) => {
     return (
-        <div className={`flor-de-encantados ${brilla ? 'brilla petalo' : ''}`}>
+    <div id="flor" className={`flor-de-encantados ${brilla ? 'brilla petalo' : ''}`}>
             <div className="tallo"></div>
             <div className="hoja izquierda"></div>
             <div className="hoja derecha"></div>
@@ -54,7 +54,7 @@ const App: React.FC = () => {
                 </button>
             </div>
             <FlorDeEncantados brilla={brilla}/>
-            <h1 className="bottom-heading">Para mi hermosa Paulita </h1>
+            <h1 className="bottom-heading">X</h1>
         </div>
     );
 };
