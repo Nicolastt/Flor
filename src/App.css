@@ -40,8 +40,8 @@ button:disabled {
   bottom: 0;
   left: 0;
   text-align: center;
-  padding: 10px 0; /* Ajusta el espaciado superior e inferior según sea necesario */
-  margin: 10px;
+  padding: 15px 0; /* Ajusta el espaciado superior e inferior según sea necesario */
+  margin: 0 auto; /* Centrar con margen igual a ambos lados */
   text-shadow: 4px 1px 3px #ec2424;
 }
 
