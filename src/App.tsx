@@ -50,12 +50,12 @@ const App: React.FC = () => {
     return (
         <div className="app">
             <div className="button-container">
-                <button onClick={handlePlay} disabled={playing}>
-                    Dale click a la flor :D
+                <button className="textoButton"  onClick={handlePlay} disabled={playing}>
+                    Da click aquí preciosa
                 </button>
             </div>
             <FlorDeEncantados brilla={brilla}/>
-            <h1 className="bottom-heading">X</h1>
+            <h1 className="textoFinal">Con mucho amor para la mujer de mi vida 💛</h1>
         </div>
     );
 };

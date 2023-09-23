@@ -1,7 +1,10 @@
+body{
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
 .petalo.brilla {
     animation: brillo 2s infinite alternate;
 }
-
 
 .flor-de-encantados {
     width: 200px;
