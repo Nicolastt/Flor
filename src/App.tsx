@@ -22,27 +22,24 @@ const FlorDeEncantados: React.FC<{ brilla: boolean }> = ({brilla}) => {
 };
 
 const App: React.FC = () => {
+    const [audio] = useState(new Audio('/songs/encantados.mp3'));
     const [playing, setPlaying] = useState(false);
     const [brilla, setBrilla] = useState(false);
 
     const handlePlay = () => {
         setPlaying(true);
         setBrilla(true); // Activar la animación de brillo cuando se inicia la canción
-        const audio = new Audio('/songs/encantados.mp3');
+
         audio.addEventListener('ended', () => {
             setPlaying(false);
             setBrilla(false); // Desactivar la animación de brillo cuando la canción termina
         });
+
         audio.play();
     };
 
     useEffect(() => {
         if (playing) {
-            const audio = new Audio('/songs/encantados.mp3');
-            audio.addEventListener('ended', () => {
-                setPlaying(false);
-                setBrilla(false); // Desactivar la animación de brillo cuando la canción termina
-            });
             audio.play();
         }
     }, [playing]);
