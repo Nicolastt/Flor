@@ -1,10 +1,7 @@
-.flor-de-encantados.brilla .petalo{
-    position: absolute;
-    top: 10%;
-    left: 0;
-    display: inline;
-    animation: brillo 3s infinite;
+.petalo.brilla {
+    animation: brillo 2s infinite alternate;
 }
+
 
 .flor-de-encantados {
     width: 200px;

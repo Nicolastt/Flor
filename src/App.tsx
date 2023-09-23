@@ -4,22 +4,23 @@ import './FlorDeEncantados.css';
 
 const FlorDeEncantados: React.FC<{ brilla: boolean }> = ({brilla}) => {
     return (
-    <div id="flor" className={`flor-de-encantados ${brilla ? 'brilla petalo' : ''}`}>
+        <div id="flor" className="flor-de-encantados">
             <div className="tallo"></div>
             <div className="hoja izquierda"></div>
             <div className="hoja derecha"></div>
             <div className="centro-flor"></div>
-            <div className="petalo uno"></div>
-            <div className="petalo dos"></div>
-            <div className="petalo tres"></div>
-            <div className="petalo cuatro"></div>
-            <div className="petalo cinco"></div>
-            <div className="petalo seis"></div>
-            <div className="petalo siete"></div>
-            <div className="petalo ocho"></div>
+            <div className={`petalo uno ${brilla ? 'brilla' : ''}`}></div>
+            <div className={`petalo dos ${brilla ? 'brilla' : ''}`}></div>
+            <div className={`petalo tres ${brilla ? 'brilla' : ''}`}></div>
+            <div className={`petalo cuatro ${brilla ? 'brilla' : ''}`}></div>
+            <div className={`petalo cinco ${brilla ? 'brilla' : ''}`}></div>
+            <div className={`petalo seis ${brilla ? 'brilla' : ''}`}></div>
+            <div className={`petalo siete ${brilla ? 'brilla' : ''}`}></div>
+            <div className={`petalo ocho ${brilla ? 'brilla' : ''}`}></div>
         </div>
     );
 };
+
 const App: React.FC = () => {
     const [playing, setPlaying] = useState(false);
     const [brilla, setBrilla] = useState(false);
